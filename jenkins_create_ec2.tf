@@ -3,7 +3,7 @@ resource "aws_instance" "http_server_with_ssh_icmp_from_jenkins" {
   ami           = "ami-0badcc5b522737046"
   instance_type = "t2.micro"
   tags = {
-    Name = "http_server_with_ssh_icmp_from_jenkins"
+    Name = "http_server_with_ssh_icmp_from_jenkins_second_name"
   }
   subnet_id                   = data.aws_subnet.subnet_for_http_servers_attrs.id
   vpc_security_group_ids      = [data.aws_security_group.sec_group_for_http_and_ssh_icmp_attrs.id]
