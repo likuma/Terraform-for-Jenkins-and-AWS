@@ -1,5 +1,5 @@
 resource "aws_iam_role" "aws_configure_for_jenkins_role" {
-  name = "aws_configure_for_jenkins_role"
+  name = "aws_configure_for_jenkins_rol"
 
   assume_role_policy = <<EOF
 {
