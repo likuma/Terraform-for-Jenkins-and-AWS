@@ -17,7 +17,7 @@ resource "aws_iam_role" "aws_configure_for_jenkins_role" {
 EOF
 
   tags = {
-    Name = aws_configure_for_jenkins_role
+    Name = "aws_configure_for_jenkins_role"
   }
 }
 
