@@ -30,3 +30,4 @@ resource "aws_iam_instance_profile" "aws_configure_for_jenkins_instance_profile"
   name = "aws_configure_for_jenkins_instance_profile"
   role = aws_iam_role.aws_configure_for_jenkins_role.name
 }
+#iam_instance_profile   = aws_iam_instance_profile.jenkins_instance_profile.name
