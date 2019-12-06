@@ -13,6 +13,9 @@ variable "CIDR_BLOCK_DB" {
 variable "CIDR_BLOCK_NON_PROD" {
   default = "172.31.66.0/24"
 }
+variable "CIDR_BLOCK_MGMNT" {
+  default = "172.31.67.0/24"
+}
 
 #select aws_vpc_id, tags for vpc must be default_vpc
 data "aws_vpc" "default_vpc_attrs" {
