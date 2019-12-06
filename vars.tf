@@ -53,3 +53,8 @@ data "aws_security_group" "sec_group_for_http_and_ssh_icmp_attrs" {
 output "sec_group_for_http_and_ssh_icmp_attrs_out" {
   value = data.aws_security_group.sec_group_for_http_and_ssh_icmp_attrs.id
 }
+
+#select aws_configure_for_jenkins_instance_profile
+data "aws_iam_instance_profile" "aws_configure_for_jenkins_instance_profile_attrs" {
+    name = "aws_configure_for_jenkins_instance_profile"
+  }
