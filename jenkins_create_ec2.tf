@@ -13,7 +13,7 @@ resource "aws_instance" "http_jenkins_server_aws_configure" {
   user_data                   = <<-EOF
                 #!/bin/bash
                 yum install wget -y
-                wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+                wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repoo
                 rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
                 yum install jenkins -y
                 yum install java -y
